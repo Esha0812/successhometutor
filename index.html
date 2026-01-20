@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Success Home Tutor - Find Your Perfect Tutor in Maharashtra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header/Navigation -->
+<header class="header">
+  <div class="header-container">
+    <div class="logo">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Success Home Tutor</span>
+    </div>
+    
+    <nav class="nav-menu">
+      <a href="#" class="nav-link">Find Tutors</a>
+      <a href="#teachers" class="nav-link">Browse Teachers</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#become-tutor" class="nav-link">Become a Tutor</a>
+    </nav>
+    
+    <div class="auth-buttons">
+      <button class="btn-login" id="loginBtn">Login</button>
+      <button class="btn-signup" id="signupBtn">Sign Up</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section with Search -->
+<section class="hero-search">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Find Your Perfect Tutor</h1>
+    <p>Connect with experienced home tutors in Maharashtra</p>
+    
+    <div class="search-container">
+      <form class="search-form" id="searchForm">
+        <div class="search-group">
+          <label>Subject</label>
+          <select id="subject" title="Select a subject" required>
+            <option value="">Select Subject</option>
+            <option value="Math">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+            <option value="Economics">Economics</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+          </select>
+        </div>
+        
+        <div class="search-group">
+          <label>Standard/Class</label>
+          <select id="standard" title="Select a class" required>
+            <option value="">Select Class</option>
+            <option value="1-5">Classes 1-5</option>
+            <option value="6-8">Classes 6-8</option>
+            <option value="9-10">Classes 9-10</option>
+            <option value="11-12">Classes 11-12</option>
+            <option value="College">College</option>
+          </select>
+        </div>
+        
+        <div class="search-group">
+          <label>City in Maharashtra</label>
+          <select id="city" title="Select a city" required>
+            <option value="">Select City</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Aurangabad">Aurangabad</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Thane">Thane</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Amravati">Amravati</option>
+            <option value="Solapur">Solapur</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn-search">Search Tutors</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- About Section - Personal and Professional -->
+<section class="about-mission">
+  <div class="container">
+    <div class="mission-content">
+      <h2>Personal and Professional</h2>
+      <p class="mission-tagline">Home Tutoring is what we do best</p>
+      <p class="mission-description">With a strong foundation in quality online education, we're proud to share the milestones that reflect our commitment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Milestones Section with Counter Animation -->
+<section class="milestones" id="milestones">
+  <div class="container">
+    <div class="milestones-grid">
+      <div class="milestone-card">
+        <div class="milestone-icon">
+          <i class="fas fa-chalkboard-user"></i>
+        </div>
+        <div class="milestone-number" data-target="500">0</div>
+        <p class="milestone-label">Tutors</p>
+        <div class="milestone-bar">
+          <div class="milestone-fill milestone-80"></div>
+        </div>
+      </div>
+      
+      <div class="milestone-card">
+        <div class="milestone-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="milestone-number" data-target="50000">0</div>
+        <p class="milestone-label">Sessions Delivered</p>
+        <div class="milestone-bar">
+          <div class="milestone-fill milestone-85"></div>
+        </div>
+      </div>
+      
+      <div class="milestone-card">
+        <div class="milestone-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="milestone-number" data-target="15000">0</div>
+        <p class="milestone-label">Pupils Taught</p>
+        <div class="milestone-bar">
+          <div class="milestone-fill milestone-75"></div>
+        </div>
+      </div>
+      
+      <div class="milestone-card">
+        <div class="milestone-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="milestone-number" data-target="1200">0</div>
+        <p class="milestone-label">Topics Covered</p>
+        <div class="milestone-bar">
+          <div class="milestone-fill milestone-70"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teachers Section -->
+<section class="teachers" id="teachers">
+  <div class="container">
+    <h2>Top Rated Tutors in Maharashtra</h2>
+    <p class="section-subtitle">Meet our most experienced and highly-rated tutors</p>
+    
+    <div class="teachers-grid" id="teachersGrid">
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">MS</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Mrs. Sneha Sharma</h3>
+          <p class="subject">Mathematics, Science</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">(124 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 8 years</p>
+          <p class="classes"><strong>Classes:</strong> 6-12</p>
+          <p class="description">Expert in CBSE curriculum with proven track record of student success.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+      
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">RJ</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Rajesh Joshi</h3>
+          <p class="subject">Physics, Mathematics</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Pune</p>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">(98 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 10 years</p>
+          <p class="classes"><strong>Classes:</strong> 9-12, JEE</p>
+          <p class="description">Specializes in competitive exam preparation with 95% student success rate.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+      
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">AP</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Anjali Patel</h3>
+          <p class="subject">English, Hindi</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Thane</p>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">(156 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 7 years</p>
+          <p class="classes"><strong>Classes:</strong> 1-10</p>
+          <p class="description">Makes language learning fun and engaging for students of all levels.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+      
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">NK</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Nikhil Kumavat</h3>
+          <p class="subject">Chemistry, Biology</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Nagpur</p>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">(87 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 6 years</p>
+          <p class="classes"><strong>Classes:</strong> 11-12, Medical</p>
+          <p class="description">Experienced medical entrance exam coach with excellent student outcomes.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+      
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">PD</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Priya Deshmukh</h3>
+          <p class="subject">Marathi, History, Geography</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Pune</p>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">(112 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 9 years</p>
+          <p class="classes"><strong>Classes:</strong> 6-10</p>
+          <p class="description">Passionate educator specializing in humanities with interactive teaching methods.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+      
+      <div class="teacher-card">
+        <div class="teacher-image">
+          <div class="avatar">VK</div>
+          <span class="online-badge">Online & Home</span>
+        </div>
+        <div class="teacher-info">
+          <h3>Vikram Kadam</h3>
+          <p class="subject">Accounts, Economics</p>
+          <p class="city"><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">(94 reviews)</span>
+          </div>
+          <p class="experience"><strong>Experience:</strong> 12 years</p>
+          <p class="classes"><strong>Classes:</strong> 11-12, Commerce</p>
+          <p class="description">CA-qualified tutor with expertise in commerce stream education.</p>
+          <button class="btn-view-profile">View Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <h2>Success Stories & Reviews</h2>
+    <p class="section-subtitle">What parents and students say about us</p>
+    
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Amit Verma (Parent)</h4>
+            <p>Mumbai</p>
+          </div>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"My son's grades improved significantly within 3 months. The tutor was professional and very patient. Highly recommended!"</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Sneha Kulkarni (Student)</h4>
+            <p>Pune</p>
+          </div>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"The tutor made mathematics so easy to understand. I scored 92 in my board exams. Thank you Success Home Tutor!"</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Rajesh Deshmukh (Parent)</h4>
+            <p>Thane</p>
+          </div>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"Excellent platform! Easy to find tutors, transparent pricing, and great communication. My daughter is doing really well."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Priya Sharma (Parent)</h4>
+            <p>Nagpur</p>
+          </div>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"My child was struggling with English, but the tutor's personalized approach worked wonders. Can't thank them enough!"</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Aarav Singh (Student)</h4>
+            <p>Mumbai</p>
+          </div>
+          <div class="review-rating">★★★★★</div>
+        </div>
+        <p class="review-text">"I prepared for JEE with success home tutor's physics expert. Got 97/100! Definitely worth every penny."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-info">
+            <h4>Meera Patel (Parent)</h4>
+            <p>Pune</p>
+          </div>
+          <div class="review-rating">★★★★☆</div>
+        </div>
+        <p class="review-text">"Great service overall. Very professional tutors and flexible scheduling. Highly satisfied with the results!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-us">
+  <div class="container">
+    <h2>Why Choose Success Home Tutor?</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <i class="fas fa-check-circle"></i>
+        <h3>Verified Tutors</h3>
+        <p>All tutors are background-checked and verified for quality education</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-chart-line"></i>
+        <h3>Proven Results</h3>
+        <p>98% student improvement rate with documented success stories</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-map-location-dot"></i>
+        <h3>Local Tutors</h3>
+        <p>Find tutors in your city for convenient home tuition</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-wallet"></i>
+        <h3>Transparent Pricing</h3>
+        <p>No hidden charges. Clear, competitive pricing displayed upfront</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p>Round-the-clock customer support for all your queries</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-clock"></i>
+        <h3>Flexible Scheduling</h3>
+        <p>Schedule sessions at your convenience, weekdays or weekends</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Become a Tutor Section -->
+<section class="become-tutor" id="become-tutor">
+  <div class="container">
+    <div class="tutor-content">
+      <div class="tutor-text">
+        <h2>Become a Tutor</h2>
+        <p>Join our growing community of educators and make a difference in students' lives while earning income on your own terms.</p>
+        
+        <ul class="tutor-benefits">
+          <li><i class="fas fa-check"></i> Flexible working hours</li>
+          <li><i class="fas fa-check"></i> Competitive compensation</li>
+          <li><i class="fas fa-check"></i> Easy enrollment process</li>
+          <li><i class="fas fa-check"></i> Access to student inquiries</li>
+          <li><i class="fas fa-check"></i> Build your reputation with reviews</li>
+          <li><i class="fas fa-check"></i> Payment guaranteed on time</li>
+        </ul>
+        
+        <button class="btn-register-tutor">Register as Tutor</button>
+      </div>
+      
+      <div class="tutor-form">
+        <h3>Quick Registration</h3>
+        <form id="tutorForm">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <label for="tutorCity">City</label>
+            <select id="tutorCity" title="Select your city" required>
+              <option value="">Select Your City</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Thane">Thane</option>
+              <option value="Aurangabad">Aurangabad</option>
+              <option value="Nashik">Nashik</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subjects You Teach" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Brief About Your Experience" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit-tutor">Submit Registration</button>
+          <div class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">About Success Home Tutor</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>For Parents</h4>
+        <ul>
+          <li><a href="#">Find Tutors</a></li>
+          <li><a href="#">Browse by Subject</a></li>
+          <li><a href="#">Browse by City</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>For Tutors</h4>
+        <ul>
+          <li><a href="#">Register as Tutor</a></li>
+          <li><a href="#">Tutor Dashboard</a></li>
+          <li><a href="#">Tutor Guidelines</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Success Home Tutor. All rights reserved. Currently serving Maharashtra.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
