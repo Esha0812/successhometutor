@@ -1,5 +1,6 @@
 ## 🌐 Live Website
-👉 https://successhometutor.netlify.app/
+👉 https://successhometutor.in
+
 
 ## 📂 Tech Stack
 - HTML
